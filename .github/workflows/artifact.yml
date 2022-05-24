@@ -6,7 +6,7 @@ env:
   ARTIFACT_NAME: myartifact
   
 jobs: 
-  main:
+  main - job 1:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1 - Check out the code
