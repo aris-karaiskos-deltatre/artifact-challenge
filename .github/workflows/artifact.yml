@@ -9,10 +9,12 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the code
+      - name: step 1 - Check out the code
         uses: actions/checkout@v2
-      - name: Upload the artifact 
+      - name: Step 2 - Upload the artifact 
         uses: actions/upload-artifact@v2
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: .
+      - name: step 3 - run commands
+        run: pwd
